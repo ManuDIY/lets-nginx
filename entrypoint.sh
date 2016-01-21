@@ -56,6 +56,7 @@ http {
   
   proxy_cache_path /var/cache/nginx keys_zone=anonymous:10m;
   proxy_temp_path /var/tmp/nginx;
+  proxy_request_buffering off;
 
   sendfile on;
   tcp_nopush on;
